@@ -7,20 +7,25 @@ import { useState } from 'react';
 
 function App() {
   const [currentpage, setCurrentPage] = useState("Home")
+  const [button, setButton] = useState("About")
 
   const handleChange =()=>{
     if(currentpage==="Home"){
    setCurrentPage("About")
+   setButton("Home")
     }
     else{
       setCurrentPage("Home")
+      setButton("About")
     }
   }
+
+  
 
   return (
     <div>
     {currentpage==='Home'?<Home/>:<About/>}
-    <button onClick={handleChange}>Change the page</button>
+    <button onClick={handleChange}>Go to {button} page</button>
     </div>
 
   );
