@@ -2,6 +2,8 @@ import Home from './pages/Home';
 import './App.css';
 import About from './pages/About';
 import { useState } from 'react';
+import List from './components/List';
+import Title from './components/Title';
 
 
 
@@ -24,9 +26,11 @@ function App() {
 
   return (
     <div>
-    {currentpage==='Home'?<Home/>:<About/>}
-    <button onClick={handleChange}>Go to {button} page</button>
+    {/* {currentpage==='Home'?<Home/>:<About/>}
+    <button onClick={handleChange}>Go to {button} page</button> */}
+    <List/>
     </div>
+    
 
   );
 }
