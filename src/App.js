@@ -8,19 +8,19 @@ import Title from './components/Title';
 
 
 function App() {
-  const [currentpage, setCurrentPage] = useState("Home")
-  const [button, setButton] = useState("About")
+  // const [currentpage, setCurrentPage] = useState("Home")
+  // const [button, setButton] = useState("About")
 
-  const handleChange =()=>{
-    if(currentpage==="Home"){
-   setCurrentPage("About")
-   setButton("Home")
-    }
-    else{
-      setCurrentPage("Home")
-      setButton("About")
-    }
-  }
+  // const handleChange =()=>{
+  //   if(currentpage==="Home"){
+  //  setCurrentPage("About")
+  //  setButton("Home")
+  //   }
+  //   else{
+  //     setCurrentPage("Home")
+  //     setButton("About")
+  //   }
+  // }
 
   
 
