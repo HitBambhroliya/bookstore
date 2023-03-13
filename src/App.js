@@ -4,6 +4,7 @@ import About from './pages/About';
 import { useState } from 'react';
 import List from './components/List';
 import Title from './components/Title';
+import LoginForm from './components/LoginForm';
 
 
 
@@ -25,11 +26,14 @@ function App() {
   
 
   return (
-    <div>
+    <>    <div>
     {/* {currentpage==='Home'?<Home/>:<About/>}
     <button onClick={handleChange}>Go to {button} page</button> */}
-    <List/>
+    {/* <List/> */}
+    <LoginForm/>
     </div>
+    </>
+
     
 
   );

@@ -1,0 +1,26 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.my_division{
+    border: 1px solid black;
+    display: inline-flex;
+    margin: 40px;
+    text-align: center;
+    flex-direction: column;
+    height: 350px;
+    width: 200px;    
+}
+
+
+.description{
+    margin: 3px;
+    padding: 3px;
+    color: blue;
+}
+
+.title{
+    color: red;
+}
