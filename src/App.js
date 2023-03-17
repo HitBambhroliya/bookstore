@@ -5,6 +5,10 @@ import { useState } from 'react';
 import List from './components/List';
 import Title from './components/Title';
 import LoginForm from './components/LoginForm';
+import InputRef from './components/InputRef';
+import FocusInput from './components/FocusInput';
+
+
 
 
 
@@ -30,7 +34,12 @@ function App() {
     {/* {currentpage==='Home'?<Home/>:<About/>}
     <button onClick={handleChange}>Go to {button} page</button> */}
     {/* <List/> */}
-    <LoginForm/>
+    {/* <LoginForm/> */}
+    {/* <InputRef/> */}
+<FocusInput/>
+
+
+
     </div>
     </>
 
