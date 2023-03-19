@@ -7,7 +7,8 @@ import Title from './components/Title';
 import LoginForm from './components/LoginForm';
 import InputRef from './components/InputRef';
 import FocusInput from './components/FocusInput';
-
+import UserList from './components/UserList';
+import Hoc from './components/Hoc';
 
 
 
@@ -36,8 +37,8 @@ function App() {
     {/* <List/> */}
     {/* <LoginForm/> */}
     {/* <InputRef/> */}
-<FocusInput/>
-
+{/* <FocusInput/> */}
+<Home/>
 
 
     </div>
