@@ -9,6 +9,7 @@ import InputRef from './components/InputRef';
 import FocusInput from './components/FocusInput';
 import UserList from './components/UserList';
 import Hoc from './components/Hoc';
+import RenderPropsComponents from './components/RenderPropsComponents';
 
 
 
@@ -38,8 +39,10 @@ function App() {
     {/* <LoginForm/> */}
     {/* <InputRef/> */}
 {/* <FocusInput/> */}
-<Home/>
+{/* <Home/> */}
 
+<RenderPropsComponents render={()=>{
+  return(<h3>I am coming from render props</h3>)}}/>
 
     </div>
     </>
