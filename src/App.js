@@ -1,7 +1,7 @@
 import Home from './pages/Home';
 import './App.css';
 import About from './pages/About';
-import { useState } from 'react';
+import { Component, useState } from 'react';
 import List from './components/List';
 import Title from './components/Title';
 import LoginForm from './components/LoginForm';
@@ -10,6 +10,8 @@ import FocusInput from './components/FocusInput';
 import UserList from './components/UserList';
 import Hoc from './components/Hoc';
 import RenderPropsComponents from './components/RenderPropsComponents';
+import ComponentA from './components/ComponentA';
+import { UserProvider } from './components/UserContext';
 
 
 
@@ -41,12 +43,17 @@ function App() {
 {/* <FocusInput/> */}
 {/* <Home/> */}
 
-<RenderPropsComponents render={()=>{
-  return(<h3>I am coming from render props</h3>)}}/>
+{/* <RenderPropsComponents render={()=>{
+  return(<h3>I am coming from render props</h3>)}}/> */}
+
+ <UserProvider value='hit' >
+  <ComponentA/>
+  </UserProvider>
 
     </div>
     </>
 
+    
     
 
   );
