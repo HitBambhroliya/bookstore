@@ -12,7 +12,7 @@ import Hoc from './components/Hoc';
 import RenderPropsComponents from './components/RenderPropsComponents';
 import ComponentA from './components/ComponentA';
 import { UserProvider } from './components/UserContext';
-
+import Users from './components/Users';
 
 
 
@@ -46,9 +46,11 @@ function App() {
 {/* <RenderPropsComponents render={()=>{
   return(<h3>I am coming from render props</h3>)}}/> */}
 
- <UserProvider value='hit' >
-  <ComponentA/>
-  </UserProvider>
+ {/* <UserProvider value='hit' > */}
+  {/* <ComponentA/> */}
+  {/* </UserProvider> */}
+
+  <Users/>
 
     </div>
     </>
