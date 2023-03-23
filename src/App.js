@@ -13,6 +13,7 @@ import RenderPropsComponents from './components/RenderPropsComponents';
 import ComponentA from './components/ComponentA';
 import { UserProvider } from './components/UserContext';
 import Users from './components/Users';
+import Post from './components/Post';
 
 
 
@@ -50,7 +51,8 @@ function App() {
   {/* <ComponentA/> */}
   {/* </UserProvider> */}
 
-  <Users/>
+  {/* <Users/> */}
+  <Post/>
 
     </div>
     </>
