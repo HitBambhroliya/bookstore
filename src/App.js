@@ -15,6 +15,7 @@ import { UserProvider } from './components/UserContext';
 import Users from './components/Users';
 import Post from './components/Post';
 import CounterHook from './components/CounterHook';
+import LoginFormFunc from './components/LoginFormFunc';
 
 
 
@@ -55,7 +56,9 @@ function App() {
   {/* <Users/> */}
   {/* <Post/> */}
 
-  <CounterHook/>
+  {/* <CounterHook/> */}
+
+  <LoginFormFunc/>
 
     </div>
     </>
