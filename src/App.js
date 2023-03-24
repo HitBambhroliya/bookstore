@@ -14,6 +14,7 @@ import ComponentA from './components/ComponentA';
 import { UserProvider } from './components/UserContext';
 import Users from './components/Users';
 import Post from './components/Post';
+import CounterHook from './components/CounterHook';
 
 
 
@@ -52,7 +53,9 @@ function App() {
   {/* </UserProvider> */}
 
   {/* <Users/> */}
-  <Post/>
+  {/* <Post/> */}
+
+  <CounterHook/>
 
     </div>
     </>
