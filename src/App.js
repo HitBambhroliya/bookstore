@@ -18,6 +18,7 @@ import CounterHook from './components/CounterHook';
 import LoginFormFunc from './components/LoginFormFunc';
 import HookMouse from './components/HookMouse';
 import MouseContainer from './components/MouseContainer';
+import Postdetails from './components/Postdetails';
 
 
 
@@ -63,8 +64,9 @@ function App() {
   {/* <LoginFormFunc/> */}
 
 {/* <Users/> */}
-<MouseContainer/>
+{/* <MouseContainer/> */}
 {/* <HookMouse/> */}
+<Postdetails/>
     </div>
     </>
 
