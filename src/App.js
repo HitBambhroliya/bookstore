@@ -22,6 +22,7 @@ import Postdetails from './components/Postdetails';
 import React from 'react';
 import { createContext } from 'react';
 import CounterwithReducer from './components/CounterwithReducer';
+import CounterThree from './components/CounterThree';
 
 export const UserContext=createContext();
 
@@ -70,7 +71,9 @@ function App() {
 {/* <MouseContainer/> */}
 {/* <HookMouse/> */}
 {/* <Postdetails/> */}
-<CounterwithReducer/>
+{/* <CounterwithReducer/> */}
+
+<CounterThree/>
     </div>
     </>
 
