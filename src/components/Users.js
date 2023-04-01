@@ -1,36 +1,99 @@
 import axios from 'axios'
-import React, { Component, useEffect, useState } from 'react'
+import React, { Component, useEffect, useReducer, useState } from 'react'
 import Userdetail from './Userdetail'
 
-//same implementation of the below code using useeffect Hook
-function Users() {
+const initialState={
+   loading:true,
+  post:{},
+   error:''
+}
 
-  const [users, setusers]=useState([]);
+const reducer=(State,Action)=>{
+   switch(Action.type){
+    case "FETCH_SUCCESS":
+      return {
+        loading:false,
+        post:Action.payload,
+        error:""
+      }
+      
+    case "FETCH_ERROR":
+      return{
+        loading:false,
+        error:"something went to wrong",
+        post:{}
+      }  
+   }
+}
 
-  useEffect(()=>{
-    axios.get("https://jsonplaceholder.typicode.com/users")
 
-         .then(Response =>{
-           setusers(Response.data)     
-         })
-    
-         .catch(error=>{
-           console.log(error)
-        })
-  })
+function Users(){
+
+  const [user,dispatch]= useReducer(reducer,initialState)
+
+   useEffect(() => {
   
-  return (
+    axios.get('https://jsonplaceholdr.typicode.com/posts/1')
+
+    .then(Response=>{
+     dispatch({type:"FETCH_SUCCESS",payload:Response.data})
+    })
+    .catch(err=>{
+       dispatch({type:"FETCH_ERROR"})
+    })
+
+  
+    
+  }, [])
+  
+
+
+  return(
     <div>
-    {
-      users.map(user =>{
-       return <Userdetail user={user} key={user.id + user.username}/>
-      })
-    }
+       
+
+         {user.loading?"loading":user.post.title}
+         {user.error?user.error:null}
+  
     </div>
   )
 }
 
-export default Users
+export default Users;
+
+
+
+
+
+//same implementation of the below code using useeffect Hook
+// function Users() {
+
+//   const [users, setusers]=useState([]);
+
+//   useEffect(()=>{
+//     axios.get("https://jsonplaceholder.typicode.com/users")
+
+//          .then(Response =>{
+//            setusers(Response.data)     
+//          })
+    
+//          .catch(error=>{
+//            console.log(error)
+//         })
+//   })
+  
+//   return (
+//     <div>
+//     {
+//       users.map(user =>{
+//        return <Userdetail user={user} key={user.id + user.username}/>
+//       })
+//     }
+//     </div>
+//   )
+// }
+
+// export default Users
 
 
 

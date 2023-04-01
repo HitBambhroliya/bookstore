@@ -60,7 +60,7 @@ function App() {
    {/* <ComponentA/>  */}
   {/* </UserContext.Provider> */}
 
-  {/* <Users/> */}
+  <Users/>
   {/* <Post/> */}
 
   {/* <CounterHook/> */}
@@ -73,7 +73,7 @@ function App() {
 {/* <Postdetails/> */}
 {/* <CounterwithReducer/> */}
 
-<CounterThree/>
+{/* <CounterThree/> */}
     </div>
     </>
 
