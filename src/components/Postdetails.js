@@ -17,7 +17,7 @@ function Postdetails() {
         })
 
         
-    },[idFromButton] )
+    },[idFromButton])
 
     function handleClick(){
       setidFromButton(id)

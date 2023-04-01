@@ -19,8 +19,11 @@ import LoginFormFunc from './components/LoginFormFunc';
 import HookMouse from './components/HookMouse';
 import MouseContainer from './components/MouseContainer';
 import Postdetails from './components/Postdetails';
+import React from 'react';
+import { createContext } from 'react';
+import CounterwithReducer from './components/CounterwithReducer';
 
-
+export const UserContext=createContext();
 
 function App() {
   // const [currentpage, setCurrentPage] = useState("Home")
@@ -52,9 +55,9 @@ function App() {
 {/* <RenderPropsComponents render={()=>{
   return(<h3>I am coming from render props</h3>)}}/> */}
 
- {/* <UserProvider value='hit' > */}
-  {/* <ComponentA/> */}
-  {/* </UserProvider> */}
+ {/* <UserContext.Provider value='hit' > */}
+   {/* <ComponentA/>  */}
+  {/* </UserContext.Provider> */}
 
   {/* <Users/> */}
   {/* <Post/> */}
@@ -66,7 +69,8 @@ function App() {
 {/* <Users/> */}
 {/* <MouseContainer/> */}
 {/* <HookMouse/> */}
-<Postdetails/>
+{/* <Postdetails/> */}
+<CounterwithReducer/>
     </div>
     </>
 
