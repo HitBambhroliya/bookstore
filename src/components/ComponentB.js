@@ -1,15 +1,22 @@
 import React from 'react'
-import { UserConsumer } from './UserContext'
+import { useContext } from 'react'
+import { createContext } from 'react'
+import { UserContext } from '../App'
+
+
 
 function ComponentB(props) {
+  const username = useContext(UserContext)
+
   return (
-    <UserConsumer>
-    {
-        username =>{
-         return <div>hello {username}</div>
-        }
-    }
-    </UserConsumer>
+    
+    
+    
+      
+      <div>hello- {username}</div>
+        
+    
+    
   )
 }
 
