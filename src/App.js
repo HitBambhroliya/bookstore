@@ -23,6 +23,7 @@ import React from 'react';
 import { createContext } from 'react';
 import CounterwithReducer from './components/CounterwithReducer';
 import CounterThree from './components/CounterThree';
+import RegisterUser from './components/RegisterUser';
 
 export const UserContext=createContext();
 
@@ -60,7 +61,7 @@ function App() {
    {/* <ComponentA/>  */}
   {/* </UserContext.Provider> */}
 
-  <Users/>
+  {/* <Users/> */}
   {/* <Post/> */}
 
   {/* <CounterHook/> */}
@@ -74,6 +75,7 @@ function App() {
 {/* <CounterwithReducer/> */}
 
 {/* <CounterThree/> */}
+<RegisterUser/>
     </div>
     </>
 
