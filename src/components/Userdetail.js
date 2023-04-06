@@ -16,4 +16,4 @@ class Userdetail extends Component {
   }
 }
 
-export default Userdetail
+export default React.memo(Userdetail)

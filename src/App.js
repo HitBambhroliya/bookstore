@@ -68,14 +68,14 @@ function App() {
 
   {/* <LoginFormFunc/> */}
 
-{/* <Users/> */}
+<Users/>
 {/* <MouseContainer/> */}
 {/* <HookMouse/> */}
 {/* <Postdetails/> */}
 {/* <CounterwithReducer/> */}
 
 {/* <CounterThree/> */}
-<RegisterUser/>
+{/* <RegisterUser/> */}
     </div>
     </>
 

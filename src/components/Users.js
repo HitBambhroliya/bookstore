@@ -33,7 +33,7 @@ function Users(){
 
    useEffect(() => {
   
-    axios.get('https://jsonplaceholdr.typicode.com/posts/1')
+    axios.get('https://jsonplaceholder.typicode.com/posts/1')
 
     .then(Response=>{
      dispatch({type:"FETCH_SUCCESS",payload:Response.data})
@@ -59,7 +59,7 @@ function Users(){
   )
 }
 
-export default Users;
+export default React.memo(Users);
 
 
 
